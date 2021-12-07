@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:id="@+id/lvNotes"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/noNotes"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="72dp"
+                android:src="@drawable/nonotes"
+                android:layout_centerInParent="true"
+                android:layout_height="72dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_Notes"
+                android:layout_centerHorizontal="true"
+                android:textsize="18sp"
+                android:text="@string/no_notes"
+                tools:ignore="UnknownId" />
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:fabSize="normal"
+            app:fabCustomSize="60dp"
+            android:src="@drawable/ic_baseline_note_add_24"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/button_add_note"
+
+
+
+             >
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </FrameLayout>
+
+</LinearLayout>
